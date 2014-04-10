@@ -7,12 +7,9 @@ import java.util.Scanner;
 
 
 class ScanerReader implements ReaderInterface {
-	static Scanner scan = null;
+	static Scanner scan = new Scanner(System.in);
 
 	ScanerReader() {
-		if (scan == null) {
-			scan = new Scanner(System.in);
-		}
 	}
 
 	@Override
