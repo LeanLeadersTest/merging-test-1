@@ -7,10 +7,12 @@ import java.util.Scanner;
 
 
 class ScanerReader implements ReaderInterface {
-	static Scanner scan = null;
+	static /**/ Scanner scan = null; // comment 2
+	
 
 	ScanerReader() {
 		if (scan == null) {
+			// comment 1
 			scan = new Scanner(System.in);
 		}
 	}
