@@ -7,9 +7,9 @@ import java.util.Scanner;
 
 
 class ScanerReader implements ReaderInterface {
-	static Scanner scan = new Scanner(System.in);
-
+	static /**/ Scanner scan = new Scanner(System.in); // comment 2
 	ScanerReader() {
+		// comment 1
 	}
 
 	@Override
